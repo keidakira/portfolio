@@ -1,0 +1,13 @@
+.outline-button {
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0.8rem 1.2rem;
+	border-radius: 290486px;
+	border: 2px solid cornflowerblue;
+	color: cornflowerblue;
+}
+
+.outline-button:hover {
+	background-color: cornflowerblue;
+	color: white;
+}

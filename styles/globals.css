@@ -1,16 +1,128 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media screen and (min-width: 1216px) {
+	.container {
+		max-width: 1152px;
+	}
+}
+
+@media screen and (min-width: 1408px) {
+	.container {
+		max-width: 1344px;
+	}
+}
+
+button {
+	cursor: pointer;
+	background: transparent;
+	transition: all 0.2s ease-in-out;
+}
+
+button:active,
+button:focus {
+	outline: none;
+}
+
+.huge-title {
+	font-family: "DM Serif Text", serif;
+	font-weight: 600;
+	font-size: 42px;
+	text-align: center;
+}
+
+.title {
+	font-family: "DM Serif Text", serif;
+	font-weight: 600;
+	font-size: 36px;
+	text-align: center;
+}
+
+.sub-title {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.padding-top-space {
+	padding-top: 4%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.profile-picture {
+	display: block;
+	border-radius: 100%;
+	width: 256px;
+	height: 256px;
+	border: 0.5px solid #f1f1f1;
+	margin: 0 auto;
+}
+
+.code-font {
+	font-family: "Source Code Pro", monospace;
+}
+
+.color-secondary {
+	color: cornflowerblue;
+}
+
+.skills,
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+}
+
+.skills > li {
+	list-style-type: none;
+	padding: 4rem;
+	background-color: #f1f1f1;
+}
+
+.skills > li > img {
+	display: block;
+	margin: 0 auto;
+}
+
+.skills > li > ul {
+	padding: 0;
+	margin: 0;
+}
+
+.skills > li > ul > li {
+	list-style-type: none;
+	padding: 0.5rem 0;
+}
+
+.projects > li {
+	list-style-type: none;
 }
