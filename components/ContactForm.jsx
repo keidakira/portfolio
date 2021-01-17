@@ -1,4 +1,6 @@
 import TextInput from "./TextInput";
+import TextArea from "./TextArea";
+import FlatButton from "./FlatButton";
 
 const ContactForm = () => {
 	return (
@@ -18,6 +20,15 @@ const ContactForm = () => {
 				style={{ width: "60%", display: "table", margin: "0 auto" }}
 			>
 				<TextInput name="name" placeholder="Name" />
+				<br />
+				<br />
+				<TextInput name="email" placeholder="Email" />
+				<br />
+				<br />
+				<TextArea name="message" placeholder="Your message to me..." />
+				<br />
+				<br />
+				<FlatButton text="Submit" style={{ float: "right" }} />
 			</form>
 		</div>
 	);
